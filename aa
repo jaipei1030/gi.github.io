@@ -1,0 +1,133 @@
+<div class="container">
+  <div class="column">
+    <div id="head">
+      <h1>關於我</h1>
+      <h3>以下是關於我的簡短介紹</h3>
+      <div id="left">
+        <div id="content">
+          <div class="wrap">
+            <div class="item">
+              <img src="https://1.bp.blogspot.com/-dy0AAqOjiJg/VxGetIGNBPI/AAAAAAAABvs/w7n070FgfCsQnN4VHcrk0i1RKuVr0MF4ACKgB/s1600/11249764_1043966035637552_8366147136578931961_o.jpg" alt="羽球場" width="340" height="200">
+              <ul>打羽球-從高中開始的興趣，喜歡打羽球的朋<p>友可來認識一下 ~ 一起打球!
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div id="content">
+            <div class="wrap">
+              <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/AtrlssoQGTM" title="首座相機" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>手做相機</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <div id="left">
+        <h1>偶像</h1>
+        <table>
+          <tr>
+            <th>Soyeon</th>
+            <td><img src="https://i02piccdn.sogoucdn.com/f45526e7bcb685a9" width="176" height="242"></td>
+          </tr>
+          <tr>
+            <th>Minnie</th>
+            <td><img src="https://imgur.dcard.tw/ya2a0AAh.jpg" width="170" height="242"></td>
+          </tr>
+          <tr>
+            <th>Miyeon</th>
+            <td><img src="https://picx.zhimg.com/50/v2-bd8aa017d9fd77a37a9b396c55d44601_720w.jpg?source=1940ef5c" width="166" height="242"></td>
+          </tr>
+          <tr>
+            <th>Yuqi</th>
+            <td><img src="https://i.pinimg.com/originals/f3/e2/c8/f3e2c89178ecdf7575498f921f5ec915.jpg" width="186" height="242"></td>
+          </tr>
+          <tr>
+            <th>Shuhua</th>
+            <td><img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/02/15/0/20201213.jpg" width="236" height="142"></td>
+          </tr>
+          <tr>
+            <th>Soojin</th>
+            <td><img src="https://images.chinatimes.com/newsphoto/2021-08-14/656/20210814003664.jpg" width="246" height="232"></td>
+          </tr>
+        </table>
+        <fieldset>
+          <legend><i>連結</i></legend>
+          <label><a href="https://codepen.io/uvrusqri-the-bold/pen/zYJbXOw" target="_blank">成員詳細介紹</a></label>
+        </fieldset>
+      </div>
+    </div>
+    <div class="column">
+      <div id="right1">
+        <h1>購買演唱會門票</h1>
+        <form action="javascript:void(0)" method="post">
+          <label>帳號: <input name="account" type="text" size="10"></label><br>
+          <label>密碼: <input name="pass" type="password" size="10"></label><br>
+          <input type="submit" value="登入" onclick="window.open('https://codepen.io/uvrusqri-the-bold/pen/jOvGzbM', '_blank')">
+        </form>
+
+        <br>
+        <form name="Meals">
+          <fieldset>
+            <legend>
+              <h1></h1>
+            </legend>
+            <label>最愛的綜藝:
+              <select name="">
+                <optgroup label="去別人的節目玩">
+                  <option value="1">認識的哥哥</option>
+                  <option value="2">一周的偶像</option>
+                </optgroup>
+                <optgroup label="自己的團綜">
+                  <option value="3">隨心所欲</option>
+                  <option value="4">小心輕放</option>
+                  <option value="5">勿擾模式</option>
+                </optgroup>
+              </select>
+            </label><br><br>
+            請問您最喜愛的成員:<br>
+            <p style="margin:-20px">
+            <h6><mark style="background:hsla(600,0%,90%,0.25);"></mark></h6>
+            </p>
+            <select name="brand" size="5" multiple>
+              <option value="1">Minnie</option>
+              <option value="2">Miyeon</option>
+              <option value="3">Soyeon</option>
+              <option value="4">Yuqi</option>
+              <option value="5">Shuhua</option>
+              <option value="6">Soojin</option>
+            </select><br><br>
+            對於(G)I-DLE的喜歡程度:<br>
+            不喜歡<input name="score" type="range" min="1" max="10">喜歡<br><br>
+            <form name="suggestion">
+              <fieldset>
+                <legend>
+                  <h1>對本站的建議:</h1>
+                </legend>
+                <textarea name="comment" rows="5" cols="20"></textarea><br>
+                <label>E-mail:<input name="email" type="email"></label><br>
+                連絡電話:<input name="tel" id="tel" type="tel"><br>
+                <input type="reset" value="清除">
+                <input type="button" value="送出" onclick="show_alert()">
+              </fieldset>
+            </form>
+            <script>
+              function show_alert() {
+                var selected = document.Meals.brand.selectedOptions;
+                var selectedValues = [];
+                for (var i = 0; i < selected.length; i++) {
+                  selectedValues.push(selected[i].text);
+                }
+                alert("您最喜愛的成員是：" + selectedValues.join(", "));
+              }
+            </script>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
